@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="63860" started-at="2024-02-26T06:49:51Z" finished-at="2024-02-26T06:50:55Z">
+  <suite name="Surefire suite" duration-ms="59897" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:45Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="63860" started-at="2024-02-26T06:49:51Z" finished-at="2024-02-26T06:50:55Z">
+    <test name="Surefire test" duration-ms="59897" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:45Z">
       <class name="com.tests.LoginPage_Test">
-        <test-method status="PASS" signature="IncorrectUsername()" name="IncorrectUsername" duration-ms="7440" started-at="2024-02-26T06:49:52Z" finished-at="2024-02-26T06:49:59Z">
+        <test-method status="PASS" signature="IncorrectUsername()" name="IncorrectUsername" duration-ms="7570" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:19:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IncorrectUsername -->
-        <test-method status="PASS" signature="BackButton()" name="BackButton" duration-ms="57652" started-at="2024-02-26T06:49:52Z" finished-at="2024-02-26T06:50:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackButton -->
-        <test-method status="PASS" signature="EmptyInputUsername()" name="EmptyInputUsername" duration-ms="42001" started-at="2024-02-26T06:49:52Z" finished-at="2024-02-26T06:50:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmptyInputUsername -->
-        <test-method status="PASS" signature="CorrectLogin() throws java.lang.InterruptedException" name="CorrectLogin" duration-ms="37227" started-at="2024-02-26T06:49:52Z" finished-at="2024-02-26T06:50:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CorrectLogin -->
-        <test-method status="PASS" signature="IncorrectPassword()" name="IncorrectPassword" duration-ms="63732" started-at="2024-02-26T06:49:52Z" finished-at="2024-02-26T06:50:55Z">
+        <test-method status="PASS" signature="IncorrectPassword()" name="IncorrectPassword" duration-ms="59757" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IncorrectPassword -->
+        <test-method status="PASS" signature="BackButton()" name="BackButton" duration-ms="53695" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackButton -->
+        <test-method status="PASS" signature="EmptyInputUsername()" name="EmptyInputUsername" duration-ms="38044" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyInputUsername -->
+        <test-method status="PASS" signature="CorrectLogin() throws java.lang.InterruptedException" name="CorrectLogin" duration-ms="33201" started-at="2024-02-26T07:19:46Z" finished-at="2024-02-26T07:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CorrectLogin -->
       </class> <!-- com.tests.LoginPage_Test -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
