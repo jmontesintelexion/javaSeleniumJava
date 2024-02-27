@@ -6,10 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Base {
     
-    private WebDriver driver;
+    WebDriver driver;
 
     public Base(WebDriver driver){
         this.driver = driver;
@@ -17,10 +19,23 @@ public class Base {
 
 
     public WebDriver chromeDriverConnection(){
+
+            System.setProperty("webdriver.chrome.driver", ".//driver//chromedriver.exe");
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("test-type");
+            options.addArguments("--start-maximized");
+            options.addArguments("--disable-web-security");
+            options.addArguments("--allow-running-insecure-content");
+            capabilities.setCapability("chrome.binary","./src//lib//chromedriver");
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            driver = new ChromeDriver(capabilities);
+            //driver.get("https://www.google.com/");
         
-        System.setProperty("webdriver.chrome.driver", ".//driver//chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize(); 
+        
+        //driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        
     
         // Implicit wait 
         driver.manage().timeouts().implicitlyWait( 

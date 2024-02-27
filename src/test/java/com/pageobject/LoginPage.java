@@ -22,12 +22,12 @@ public class LoginPage extends Base{
      * 
      */
 
-     By Username = By.id("Username");
-     By btnSubmit = By.id("btnSubmit");
-     By pwd = By.id("pwd");
-     By login = By.id("login");
-     By loginErrorMessage = By.className("validation-summary-errors");
-     By btnBack = By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[3]/div[1]/button");
+     private By Username = By.id("Username");
+     private By btnSubmit = By.id("btnSubmit");
+     private By pwd = By.id("pwd");
+     private By login = By.id("login");
+     private By loginErrorMessage = By.className("validation-summary-errors");
+     private By btnBack = By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[3]/div[1]/button");
 
     //@FindBy(id = "Username") By Username;
     //@FindBy(id = "btnSubmit") By btnSubmit;
@@ -35,8 +35,8 @@ public class LoginPage extends Base{
     //@FindBy(id = "login") By login;
 
 
-    final String USER = "pmartinez@miempresa.work";
-    final String PASS = "WbtD3mo2021&";
+    private final String USER = "pmartinez@miempresa.work";
+    private final String PASS = "WbtD3mo2021&";
 
 
     public LoginPage(WebDriver driver){
@@ -51,7 +51,7 @@ public class LoginPage extends Base{
         click(login);
     }
 
-    public Boolean loginEmptyUsername(){
+    public Boolean loginEmptyInputUsername(){
         type("", Username);
         return isEnabled(btnSubmit);
     }
