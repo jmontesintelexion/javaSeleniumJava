@@ -23,6 +23,7 @@ public class Base {
             System.setProperty("webdriver.chrome.driver", ".//driver//chromedriver.exe");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
+            options.addArguments("--lang=es");
             options.addArguments("test-type");
             options.addArguments("--start-maximized");
             options.addArguments("--disable-web-security");
