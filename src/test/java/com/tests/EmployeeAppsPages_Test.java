@@ -64,6 +64,7 @@ public class EmployeeAppsPages_Test {
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.getDefault());
         String year = yearFormat.format(calendar.getTime());
         assertEquals(day+"/"+month+"/"+year, home.homeSubTxtFechaEmployeeAppAsistencia());
+        System.out.println(month);
         assertEquals("HORARIO", home.homeTxtHorarioEmployeeAppAsistencia());
         assertEquals("Noche", home.homeSubTxtHorarioEmployeeAppAsistencia());
         assertEquals("UBICACIÓN", home.homeTxtUbicacionEmployeeAppAsistencia());
